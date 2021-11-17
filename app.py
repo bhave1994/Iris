@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 
-@app.route('/')
+@app.route('/',methods=['GET'])
 def man():
     return render_template('home.html')
 
